@@ -22,4 +22,7 @@ export class TasksComponent implements OnInit {
       )
   }
 
+  isF : boolean = false
+  isF2 : boolean = false
+  isF3 : boolean = false
 }

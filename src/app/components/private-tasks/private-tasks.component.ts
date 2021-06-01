@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-private-tasks',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./private-tasks.component.css']
 })
 export class PrivateTasksComponent implements OnInit {
-
-  constructor() { }
+  user = {
+  }
+  constructor(
+    private authService: AuthService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  continue(){
+    this.router.navigate(['/tasks']);
   }
 
 }

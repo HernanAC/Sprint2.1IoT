@@ -1,9 +1,80 @@
-<ul class="list-group-item">
-    <li class="list-group-item" *ngFor = "let task of tasks" >
-        <div class="card">
-            <div class="card-body">
-            </div>
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div class="toast-body">
+            Estudiante 1
         </div>
+        <button type="button" class="btn btn-primary" (click)="isF=!isF" >Ver perfil</button>
+        
     </li>
 
-</ul>
+    <table class="table table-hover" *ngIf="isF">
+        <tbody>
+          <tr class="table-secondary">
+            <th scope="row">Variable</th>
+            <td>Tempertura</td>
+            <td>Ruido</td>
+            <td>Temperatura</td>
+            <td>Luminosidad</td>
+          </tr>
+          <tr class="table-primary">
+            <th scope="row">Datos</th>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+          </tr>
+        </tbody>
+      </table>
+    
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div class="toast-body">
+            Estudiante 2 
+        </div>
+        <button type="button" class="btn btn-primary" (click)="isF2=!isF2" >Ver perfil</button>
+    </li>
+
+    <table class="table table-hover" *ngIf="isF2">
+        <tbody>
+          <tr class="table-secondary">
+            <th scope="row">Variable</th>
+            <td>Tempertura</td>
+            <td>Ruido</td>
+            <td>Temperatura</td>
+            <td>Luminosidad</td>
+          </tr>
+          <tr class="table-primary">
+            <th scope="row">Datos</th>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+          </tr>
+        </tbody>
+    </table>
+
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <div class="toast-body">
+            Estudiante 3 
+        </div>
+        <button type="button" class="btn btn-primary" (click)="isF3=!isF3" >Ver perfil</button>
+    </li>
+
+    <table class="table table-hover" *ngIf="isF3">
+        <tbody>
+          <tr class="table-secondary">
+            <th scope="row">Variable</th>
+            <td>Tempertura</td>
+            <td>Ruido</td>
+            <td>Temperatura</td>
+            <td>Luminosidad</td>
+          </tr>
+          <tr class="table-primary">
+            <th scope="row">Datos</th>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+          </tr>
+        </tbody>
+      </table>
+  </ul>
